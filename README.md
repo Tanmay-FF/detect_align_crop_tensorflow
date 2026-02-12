@@ -84,6 +84,7 @@ Use `face_detection_demo.py` to quickly verify detection performance without ali
 **Run on a single image:**
 ```bash
 python face_detection_demo.py --input path/to/image_folder
+```
 ---
 
 
