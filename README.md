@@ -9,14 +9,16 @@ This repository implements the **face detection → landmark prediction → alig
 
 The goal is to **reproduce the production alignment/cropping pipeline** and verify that the outputs match what production generates.
 
+We also have a separate script if we just want to perform detection on a set of images named after ```face_detection_demo.py```.
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 .
 ├── detect_crop_align_tf.py          # Main pipeline script
 ├── requirements.txt                 # Dependencies
+├── face_detection_demo.py           # Just run face detection
 │
 ├── onnx_models/
 │   ├── model_face_v2.onnx           # Detector 2 ONNX model
@@ -27,7 +29,7 @@ The goal is to **reproduce the production alignment/cropping pipeline** and veri
 
 ---
 
-## ✅ What This Repo Does
+##  What This Repo Does
 
 ### **1. Face Detection (Detector 2 ONNX)**
 
@@ -61,9 +63,9 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+## Usage
 
-Run the full pipeline on an input image:
+1. Run the full pipeline on an input image:
 
 ```bash
 python detect_crop_align_tf.py --image PATH_TO_IMAGE
@@ -75,6 +77,14 @@ Output crops will be saved under:
 crop_after_detection_alignment/
 ```
 
+2. Run only detection on images present in a given folder:
+
+Use `face_detection_demo.py` to quickly verify detection performance without alignment.
+
+**Run on a single image:**
+```bash
+python face_detection_demo.py --input path/to/image_folder
 ---
+
 
 
