@@ -77,7 +77,7 @@ Output crops will be saved under:
 crop_after_detection_alignment/
 ```
 
-###2. Run only detection on images present in a given folder:
+### 2. Run only detection on images present in a given folder:
 
 Use `face_detection_demo.py` to quickly verify detection performance without alignment.
 
