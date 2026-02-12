@@ -55,7 +55,7 @@ We also have a separate script if we just want to perform detection on a set of 
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ```bash
 pip install -r requirements.txt
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the full pipeline on an input image:
+### 1. Run the full pipeline on an input image:
 
 ```bash
 python detect_crop_align_tf.py --image PATH_TO_IMAGE
@@ -77,7 +77,7 @@ Output crops will be saved under:
 crop_after_detection_alignment/
 ```
 
-2. Run only detection on images present in a given folder:
+###2. Run only detection on images present in a given folder:
 
 Use `face_detection_demo.py` to quickly verify detection performance without alignment.
 
